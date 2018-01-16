@@ -4,15 +4,18 @@ Angular 2+ implementation for Google charts
 
 ## Documentation:
 
+##Install 
 Install ng-g-charts
     npm install ng-g-charts --save
 
+##Import 
 Import ChartModule to your app mdule and add it to imports
     import { ChartModule } from './modules/chart/chart.module';
      imports: [
         ChartModule
     ],
 
+##Tag 
 Tag to be used is <ng-g-chart></ng-g-chart>
 
 It accepts the following inputs: 
@@ -44,3 +47,5 @@ default value is 'current', you can specify a version number or 'upcoming'
 default is English, if you need to change the value you can pass a valid string 
 
 NgGCharts support all the google charts except Diff Chart
+
+Report any issues here -> https://github.com/vpotluri9/ng-g-charts/issues
