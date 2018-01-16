@@ -10,7 +10,7 @@ Install ng-g-charts
 
 ## Import 
 Import ChartModule to your app mdule and add it to imports
-    import { ChartModule } from './modules/chart/chart.module';
+    import { ChartModule } from 'ng-g-charts';
      imports: [
         ChartModule
     ],
