@@ -1,27 +1,46 @@
-# NgGChartsLibrary
+# NgGCharts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
+Angular 2+ implementation for Google charts 
 
-## Development server
+## Documentation:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Install ng-g-charts
+    npm install ng-g-charts --save
 
-## Code scaffolding
+Import ChartModule to your app mdule and add it to imports
+    import { ChartModule } from './modules/chart/chart.module';
+     imports: [
+        ChartModule
+    ],
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Tag to be used is <ng-g-chart></ng-g-chart>
 
-## Build
+It accepts the following inputs: 
+###chart: 
+This is a mandatory field. You should pass the chart type string. 
+The following values are valid(remember this field is not case sensitive, you can have caps too):
+piechart, barchart, columnchart, annotationchart, areachart, bubblechart, calendar, candlestickchart, combochart, sankey, scatterchart, steppedareachart, timeline, treemap, wordtree, table. 
+###options: 
+This is an optionsl field. This takes an object of options as input.
+###columns: 
+format -> { type: 'string', id: 'element' }
+This is the array of columns for google.visualization.DataTable() 
+This is mandatory if you do not input array field. 
+This takes an array of the above formatted objects.
+###rows: 
+This is the array of rows for google.visualization.DataTable();
+This is mandatory if you do not input array field.
+This takes an array of arrays as an input. Where each array refers to each row of data.
+###array:
+This is the array of data for google.visualization.arrayToDataTable
+This is mandatory if you do not input rows and columns.
+This field is the input for 
+###isMaterial: 
+NgGCharts supports material charts for bar and column charts. 
+The default value of isMaterial is flase, pass it as true when you need material maps
+###version: 
+default value is 'current', you can specify a version number or 'upcoming'
+###lang: 
+default is English, if you need to change the value you can pass a valid string 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+NgGCharts support all the google charts except Diff Chart
