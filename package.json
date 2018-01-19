@@ -1,6 +1,6 @@
 {
   "name": "ng-g-charts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Google charts implementation for angular 2+ apps",
   "license": "MIT",
   "repository": {
@@ -11,6 +11,13 @@
     "name": "Venkatesh Potluri",
     "email": "vpotluri07@gmail.com"
   },
+  "keywords": [
+    "Angular",
+    "module",
+    "component",
+    "google charts",
+    "angular charts"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
