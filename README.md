@@ -4,19 +4,22 @@ Angular 2+ implementation for Google charts
 
 ## Documentation:
 
+## Add google charts
+add <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> to your index.html
+
 ## Install 
-Install ng-g-charts
+Install ng-g-charts:
     npm install ng-g-charts --save
 
 ## Import 
-Import ChartModule to your app mdule and add it to imports
+Import ChartModule to your app mdule and add it to imports:
     import { ChartModule } from 'ng-g-charts';
      imports: [
         ChartModule
     ],
 
 ## Tag 
-Tag to be used is <ng-g-chart></ng-g-chart>
+Tag to be used is 'ng-g-chart'
 
 It accepts the following inputs: 
 ### chart: 
@@ -49,3 +52,5 @@ default is English, if you need to change the value you can pass a valid string
 NgGCharts support all the google charts except Diff Chart
 
 Report any issues here -> https://github.com/vpotluri9/ng-g-charts/issues
+
+Happy Coding :)

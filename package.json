@@ -1,11 +1,11 @@
 {
   "name": "ng-g-charts",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Google charts implementation for angular 2+ apps",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vpotluri9/ng-spinner"
+    "url": "https://github.com/vpotluri9/ng-g-charts"
   },
   "author": {
     "name": "Venkatesh Potluri",
@@ -20,7 +20,6 @@
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
