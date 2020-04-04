@@ -11,6 +11,11 @@ add <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js
 Install ng-g-charts:
     npm install ng-g-charts --save
 
+## Versions
+
+v0.0.3 -> Angular 5
+v6.0.0 -> Angular 6
+
 ## Import 
 Import ChartModule to your app mdule and add it to imports:
     import { ChartModule } from 'ng-g-charts';
