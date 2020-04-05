@@ -15,7 +15,8 @@ Install ng-g-charts:
 
 v0.0.3 -> Angular 5 |
 v6.0.0 -> Angular 6 | 
-v7.0.0 -> Angular 7
+v7.0.0 -> Angular 7 |
+v8.0.0 -> Angular 8
 
 ## Import 
 Import ChartModule to your app mdule and add it to imports:

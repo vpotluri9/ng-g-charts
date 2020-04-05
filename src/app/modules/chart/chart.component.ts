@@ -7,7 +7,7 @@ declare var google: any;
   styleUrls: ['./chart.component.css']
 })
 export class ChartComponent implements OnInit {
-  @ViewChild('chart') chartDiv: ElementRef;
+  @ViewChild('chart', { static: true }) chartDiv: ElementRef;
   chartLibType;
   visBoolean;
   @Input() chart;
